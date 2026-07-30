@@ -12,7 +12,7 @@ def ma_strategy(ticker: str,
     mal = vbt.MA.run(price, window=lo_window)
 
     entries = mas.ma_crossed_above(mal)
-    exits = mas.ma_crossed_bellow(mal)
+    exits = mas.ma_crossed_below(mal)
 
     portifolio = vbt.Portfolio.from_signals(close=price, 
                                             entries=entries, 
