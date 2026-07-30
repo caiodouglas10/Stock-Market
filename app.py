@@ -4,7 +4,7 @@ from backtesting import ma_strategy
 
 tab1, tab2 = st.tabs(["RSI", "MA_STRATEGY"])
 
-ticker = st.sidebar.text_input('Ticker', value='BRA3.SA')
+ticker = st.sidebar.text_input('Ticker', value='BRAP4.SA')
 ma_short_button = st.sidebar.number_input('MA SHORT', min_value=1, max_value=100, value=9, step=1)
 ma_long_button = st.sidebar.number_input('MA LONG', min_value=50, max_value=300, value=72, step=1)
 
